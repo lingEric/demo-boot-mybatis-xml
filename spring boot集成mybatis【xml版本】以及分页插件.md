@@ -2,7 +2,7 @@
 
 此项目由spring boot集成mybatis，mybatis-generator,mybatis pagehelper,druid
 
-
+## 1.pom文件
 
 完整的pom文件如下：
 
@@ -93,7 +93,9 @@
 </project>
 ```
 
-application.yml文件配置
+
+
+## 2.application.yml文件
 
 ```yml
 server:
@@ -136,6 +138,8 @@ CREATE TABLE t_user(
 ) ENGINE=INNODB AUTO_INCREMENT=1000 DEFAULT CHARSET=utf8;
 
 ```
+
+## 3.代码生成器配置
 
 配置mybatis-generator自动生成代码的相关配置
 
@@ -222,7 +226,7 @@ Process finished with exit code 0
 
 以上步骤就可以使用generator自动生成model和dao层的代码了。
 
-
+## 4.将dao添加到ioc容器
 
 把mybatis的dao加入到IoC容器中。
 
